@@ -1,0 +1,165 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ysabeau+Infant:wght@500&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-page {
+  display: flex;
+  flex-direction: column;
+}
+.title-page p {
+  background-color: #1CD1B0;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 15px;
+  padding-top: 5px;
+}
+.title-page h1 {
+  background-color: #00669F;
+  height: 70px;
+  padding-left: 20px;
+  font-size: 40px;
+  padding-top: 10px;
+  box-shadow: 3px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.card-batman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 70px 70px 0px 0px;
+  background-color: #f3f3f3;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.card-batman h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 30px;
+  top: -50px;
+}
+.card-batman p {
+  position: relative;
+  font-size: 16px;
+  top: -50px;
+  padding: 10px 20px;
+  text-align: left;
+}
+.card-batman button.ver-mas {
+  position: relative;
+  background-color: #00669f;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  padding: 20px 50px;
+  cursor: pointer;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.banner-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.like {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: none;
+  border: none;
+  z-index: 1;
+  color: #CC2424;
+  font-size: 30px;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+.heroe {
+  position: relative;
+  max-width: 120px;
+  height: auto;
+  border-radius: 50%;
+  top: -70px;
+  left: 30%;
+}
+
+.final-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00669F;
+  height: 100%;
+  padding-left: 20px;
+  font-size: 12px;
+  padding-top: 5px;
+  color: white;
+}
+.final-title img {
+  width: 200px;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  .card-batman {
+    margin: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .title-page {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .title-page p {
+    font-size: 12px;
+  }
+  .title-page h1 {
+    font-size: 24px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-batman {
+    margin: 20px;
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .final-title {
+    text-align: center;
+    flex-direction: column;
+  }
+  .final-title h1 {
+    margin-bottom: 10px;
+  }
+  .final-title img {
+    max-width: 100px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
